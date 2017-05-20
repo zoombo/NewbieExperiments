@@ -35,13 +35,13 @@ void main(void) {
 
 		i = 5;
 		i = (i += 1) + (i += 1);
-		printf("i = (i+=1) + (i+=1) : %d\n", i); 
+		printf("i = (i+=1) + (i+=1) : %d\n", i);
 
 		i = 5;
 		i++;
 		i++;
 		i = i + i;
-		printf("i = 5; i++; i++; i = i + i; : %d\n", i); // Åáàòü ìîé ìîçã... Äâàæäû...
+		printf("i = 5; i++; i++; i = i + i; : %d\n", i); // Ебать мой мозг... Дважды...
 	}
 	if (!RUN) {
 		int num;
@@ -111,7 +111,7 @@ void main(void) {
 
 	if (!RUN) {
 
-		//printf("%d", TESTDEFF); nl; // Íå ðàáîòàåò.
+		//printf("%d", TESTDEFF); nl; // Не работает.
 
 	}
 
@@ -146,7 +146,7 @@ void main(void) {
 
 }
 
-// Ðåêóðñèâíîå íàõîæäåíèå îñòàòêà îò äåëåíèÿ ïî ìîäóëþ.
+// Рекурсивное нахождение остатка от деления по модулю.
 int divi(int number, int divisor) {
 	int result = number;
 	if (number >= divisor) {
@@ -155,5 +155,4 @@ int divi(int number, int divisor) {
 	}
 	return result;
 }
-
 
